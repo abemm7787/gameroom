@@ -6,7 +6,7 @@
 const mlb_baseball_table = [
   {baseball_teams: 'Royals',description:"we are farmers, bum, bumb, bum, bum, bum, um" , odds: "1/2", price: 10.00},   //baseball_teams_team
   {baseball_teams: 'Mets'   ,description:"we are farmers, bum, bumb, bum, bum, bum, um" , odds: "1/2", price: 10.00 },
-  { baseball_teams: 'Dogers'   ,description:"we are farmers, bum, bumb, bum, bum, bum, um" , odds: "1/2", price: 10.00},
+  { baseball_teams: 'Dodgers'   ,description:"we are farmers, bum, bumb, bum, bum, bum, um" , odds: "1/2", price: 10.00},
   { baseball_teams: 'Red_Soxs'  ,description:"we are farmers, bum, bumb, bum, bum, bum, um" , odds: "1/2", price: 10.00},
   { baseball_teams: 'Cardinals'  ,description:"we are farmers, bum, bumb, bum, bum, bum, um" , odds: "1/2", price: 10.00},
   {baseball_teams: 'Bluejays'    ,description:"we are farmers, bum, bumb, bum, bum, bum, um" , odds: "1/2", price: 10.00},

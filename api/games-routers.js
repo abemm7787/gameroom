@@ -1,4 +1,5 @@
-const router = require("express").Router();
+const express = require('express')
+const router = express.Router()
 
 const UserAccount = require("./games-modules");
 
@@ -18,7 +19,6 @@ router.get("/:id", (req, res, next) => {
       res.status(201).json(lists);
     })
     .catch(next);
-  console.log("victory");
 });
 
 // router.post("/",  async (req,res,next ) => {
@@ -37,7 +37,7 @@ router.get("/:id", (req, res, next) => {
 //     }})
 
 router.post("/", async (req, res, next) => {
-  console.log(req)
+  console.log(req.body)
   try {
     const data = await UserAccount.create( {
       odds: req.body.odds, 
