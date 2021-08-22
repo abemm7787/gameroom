@@ -39,10 +39,7 @@ router.get("/:id", (req, res, next) => {
 router.post("/", async (req, res, next) => {
   console.log(req)
   try {
-    const data = await UserAccount.create( {
-      odds: req.body.odds, 
-      price: req.body.price
-    });
+    const data = await UserAccount.create(req.body);
   res.status(201).json(data); 
 }
 catch (err) {

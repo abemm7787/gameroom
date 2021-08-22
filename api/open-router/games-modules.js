@@ -1,5 +1,5 @@
 
-const db = require("../data/dbConfig")
+const db = require("../../data/dbConfig")
 
 
 
@@ -11,23 +11,19 @@ return db.select().table("mlb_baseball_table")
 
 }
 
-
 const getbyId = async (id) => {
     return db('mlb_baseball_table').where('id', id).first()
   }
 
 
 
-const create = async(odds, price) =>{
+const create = async(team) =>{
 
-  const  [id] = await db("mlb_baseball_table").insert({odds ,price })
+
+  const  [id] = await db("mlb_baseball_table").insert(team)
     return getbyId(id)
  
 }
-
-
-
-
 
 
 
@@ -37,15 +33,9 @@ const updateById = async (id, account) => {
 }
 
 
-
-
-
 async function remove(){
 
-
 }
-
-
 
 
 
