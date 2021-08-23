@@ -10,6 +10,6 @@ const authRouter =  require("./auth-users/auth-router")
 server.use(cors())
 server.use(express.json())
 server.use("/api/games", gameRouter)
-server.use("/api/games", authRouter)
+server.use("/api/auth", authRouter)
 
 module.exports = server
